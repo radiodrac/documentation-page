@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Technical Documentation Page Project</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>CSS Documentation</h1></header>
+      <ul>
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+      <li><a class="nav-link" href="#what_is_css">What is CSS</a></li>
+      <li><a class="nav-link" href="#css_syntax">CSS syntax</a></li>
+      <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header><h2>Introduction</h2></header>
+        <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+      </section>
+      <section class="main-section" id="prerequisites">
+        <header><h2>Prerequisites</h2></header>
+        <p>This guide assumes you have the following basic background:</p>
+          <ol>
+            <li>Basic familiarity with using computers and using the Web passively (i.e. looking at it, consuming the content.)</li>
+            <li>A basic work environment set up (text editor, web browser), and an understanding of how to create and manage files.</li>
+            <li>Basic familiarity with HTML.</li>
+          </ol>
+      </section>
+      <section class="main-section" id="what_is_css">
+        <header><h2>What is CSS</h2></header>
+        <p>CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc. Using CSS, you can control exactly how HTML elements look in the browser, presenting your markup using whatever design you like.</p>
+        <p>A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across other markup languages such as SVG or XML.</p>
+        <p>Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge, are designed to present documents visually, for example, on a computer screen, projector, or printer.</p>
+        <p>CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.</p>
+      </section>
+      <section class="main-section" id="css_syntax">
+        <header><h2>CSS syntax</h2></header>
+        <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.</p>
+        <p>For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+        <pre>
+        <code>
+h1 {
+  color: red;
+  font-size: 5em;
+}</code>
+        </pre>
+        <ul>
+          <li>In the above example, the CSS rule opens with a selector. This selects the HTML element that we are going to style. In this case, we are styling level one headings (<code>&lt;h1&gt;</code>).</li>
+          <li>We then have a set of curly braces <code>{ }</code>.</li>
+          <li>Inside the braces will be one or more declarations, which take the form of property and value pairs. We specify the property (<code>color</code> in the above example) before the colon, and we specify the value of the property after the colon (<code>red</code> in this example).</li>
+          <li>This example contains two declarations, one for <code>color</code> and the other for <code>font-size</code>. Each pair specifies a property of the element(s) we are selecting (<code>&lt;h1&gt;</code> in this case), then a value that we'd like to give the property.</li>
+        </ul>
+        <p>A CSS stylesheet will contain many such rules, written one after the other.</p>
+        <pre>
+          <code>
+h1 {
+  color: red;
+  font-size: 5em;
+}
+
+p {
+  color: black;
+}</code>
+        </pre>
+      </section>
+      <section class="main-section" id="reference">
+        <header><h2>Reference</h2></header>
+        <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps" target="_blank">MDN</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>
